@@ -1,7 +1,7 @@
 #!/bin/bash
 
 AWS_REGION="eu-west-2"
-REPOSITORY="484824883615.dkr.ecr.eu-west-2.amazonaws.com"
+REPOSITORY=$1
 IMAGE=$REPOSITORY:latest
 
 # docker login
