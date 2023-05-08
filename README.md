@@ -55,8 +55,8 @@ Flask App could get build and pushed to ECR repo by using below script and param
 ```sh
 $ ./build-and-push.sh <aws-region-name> <ECR-Repo-URL>
 ```
-aws-region-name : could be eu-west-2 ( Default ) or similar
-ECR-Repo-URL : <aws-account-number>.dkr.ecr.<aws-region-name>.amazonaws.com
+* aws-region-name : could be eu-west-2 ( Default ) or similar
+* ECR-Repo-URL : [aws-account-number].dkr.ecr.[aws-region-name].amazonaws.com
 
 ## Deploy to AWS
 
@@ -67,7 +67,7 @@ Flask App could be deployed to AWS, where it will automatically deploy on AWS EC
 * Create Default VPC with Subnets
 * Create a load balancer.
 
-pre-requisite : you should have .aws/credentials file in your shell with AWS Access and Secret Key
+**pre-requisite** : you should have .aws/credentials file in your shell with AWS Access and Secret Key
 
 ```sh
 $ cd terraform
